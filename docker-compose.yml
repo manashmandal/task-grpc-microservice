@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  grpc-server:
+    build:
+      context: ./
+      dockerfile: ./grpc_server/Dockerfile
+    ports:
+      - "50051:50051"
