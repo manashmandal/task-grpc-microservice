@@ -52,4 +52,4 @@ The Flask app is rendering a html file and communicating with the gRPC Server. O
 
 ## Demo
 
-<img src="https://i.imgur.com/Wm1paev.gif">
+<img src="/public/demo.gif?raw=true">
