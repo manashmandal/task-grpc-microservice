@@ -14,5 +14,5 @@ message MeterUsageRequest {
 
 message MeterUsageResponse {
   google.protobuf.Timestamp time = 1;
-  float meterusage = 2;
+  double meterusage = 2; // Using float was causing precision error
 }

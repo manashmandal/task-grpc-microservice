@@ -1,3 +1,4 @@
+import os
 import grpc
 import meterusage_pb2
 import meterusage_pb2_grpc
@@ -8,7 +9,6 @@ from google.protobuf.timestamp_pb2 import Timestamp
 import datetime
 import csv
 from dateutil import parser
-import os
 
 
 class MeterUsage(meterusage_pb2_grpc.MeterUsageService):

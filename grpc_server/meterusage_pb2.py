@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x10meterusage.proto\x12\nmeterusage\x1a\x1fgoogle/protobuf/timestamp.proto\"\x13\n\x11MeterUsageRequest\"R\n\x12MeterUsageResponse\x12(\n\x04time\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x12\n\nmeterusage\x18\x02 \x01(\x02\x32g\n\x11MeterUsageService\x12R\n\rGetMeterUsage\x12\x1d.meterusage.MeterUsageRequest\x1a\x1e.meterusage.MeterUsageResponse\"\x00\x30\x01\x62\x06proto3'
+  serialized_pb=b'\n\x10meterusage.proto\x12\nmeterusage\x1a\x1fgoogle/protobuf/timestamp.proto\"\x13\n\x11MeterUsageRequest\"R\n\x12MeterUsageResponse\x12(\n\x04time\x18\x01 \x01(\x0b\x32\x1a.google.protobuf.Timestamp\x12\x12\n\nmeterusage\x18\x02 \x01(\x01\x32g\n\x11MeterUsageService\x12R\n\rGetMeterUsage\x12\x1d.meterusage.MeterUsageRequest\x1a\x1e.meterusage.MeterUsageResponse\"\x00\x30\x01\x62\x06proto3'
   ,
   dependencies=[google_dot_protobuf_dot_timestamp__pb2.DESCRIPTOR,])
 
@@ -69,7 +69,7 @@ _METERUSAGERESPONSE = _descriptor.Descriptor(
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
       name='meterusage', full_name='meterusage.MeterUsageResponse.meterusage', index=1,
-      number=2, type=2, cpp_type=6, label=1,
+      number=2, type=1, cpp_type=5, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,

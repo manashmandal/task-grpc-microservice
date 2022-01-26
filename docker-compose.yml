@@ -3,7 +3,23 @@ version: "3"
 services:
   grpc-server:
     build:
-      context: ./backend
+      context: ./
       dockerfile: ./grpc_server/Dockerfile
     ports:
       - "50051:50051"
+
+  flask-http-server:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - grpc-server
+
+    environment:
+      - "GRPC_SERVER=grpc-server:50051"
+
+    command: "gunicorn app:app -b 0.0.0.0:5000"
